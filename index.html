@@ -4,28 +4,38 @@
   <title>Saloon in your pocket</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body, html {
-  height: 100%;
+*, html, body {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("home.jpeg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.banner {
+  height: 100%;
+  width: 100%;
+  background: #ffd33f;
 }
+
+.banner img {
+  max-width: 100%;
+  width: 100%;
+  height: calc(100vh - 4px);
+}
+
+/* .bg {
+    background-image: url(home.jpeg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 </style>
 </head>
 <body>
 
-<div class="bg"></div>
+<div class="banner">
+  <img src="home.jpeg" alt="home" />
+</div>
 
  
 
